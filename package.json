@@ -1,15 +1,20 @@
 {
+
   "name": "tedtalks-ui",
+  "homepage": "http://trops.github.io/tt-ui",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "algoliasearch": "3.35.1",
+    "gh-pages": "^2.2.0",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-instantsearch-dom": "6.3.0",

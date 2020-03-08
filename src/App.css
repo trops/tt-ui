@@ -48,6 +48,10 @@ em {
 }
 
 .searchbox {
+  margin-bottom: 1rem;
+}
+
+.statsbox {
   margin-bottom: 2rem;
 }
 
@@ -64,7 +68,7 @@ h3 {
   font-size: 1rem;
   font-weight: bold;
   color: black;
-  margin-bottom: .4rem;
+  margin-bottom: 0;
 }
 
 p {
@@ -73,16 +77,18 @@ p {
   padding: 0;
 }
 
-.hitTile {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  border: 0;
+li.ais-Hits-item {
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: 3px solid transparent;
+  cursor: pointer;
 }
 
-li.ais-Hits-item {
-  border: 0;
+li.ais-Hits-item:hover {
+  border: 3px solid red;
   box-shadow: none;
+  cursor: pointer;
 }
 
 p.tiny {

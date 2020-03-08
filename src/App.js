@@ -6,10 +6,9 @@ import {
   SearchBox,
   Pagination,
   RefinementList,
-  RangeSlider,
   Stats,
 } from 'react-instantsearch-dom';
-import PropTypes from 'prop-types';
+import Hit from './Hit';
 import './App.css';
 
 const searchClient = algoliasearch(
@@ -41,8 +40,12 @@ class App extends Component {
                       placeholder: '',
                     }}
                   />
-                  <Stats />
-                  <Hits hitComponent={Hit} />
+                  <div className="statsbox">
+                    <Stats />
+                  </div>
+                  <div className="hitsbox">
+                    <Hits hitComponent={Hit} />
+                  </div>
 
                   <div className="pagination">
                     <Pagination />
@@ -56,32 +59,5 @@ class App extends Component {
     );
   }
 }
-
-function Hit(props) {
-  const description =
-    props.hit.description.length > 100
-      ? `${props.hit.description.substr(0, 100)}...`
-      : props.hit.description;
-  return (
-    <div className="hitTile">
-      <div className="hitImage">
-        <img
-          src={props.hit.image_url}
-          style={{ flex: 0, height: 120, width: undefined }}
-          alt={props.hit.name}
-        />
-      </div>
-      <h3>
-        <strong>{props.hit.name}</strong>
-      </h3>
-      <p>{description}</p>
-      <p className="tiny">Viewed {props.hit.viewed_count} times</p>
-    </div>
-  );
-}
-
-Hit.propTypes = {
-  hit: PropTypes.object.isRequired,
-};
 
 export default App;
