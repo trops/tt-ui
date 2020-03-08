@@ -32,9 +32,7 @@ class App extends Component {
             <div className="right-panel">
               <div className="search-panel">
                 <div className="search-panel__filters">
-                  <h3>Tags</h3>
                   <RefinementList attribute="tags" />
-                  <RangeSlider attribute="popularity_score" min="10" />
                 </div>
                 <div className="search-panel__results">
                   <SearchBox
