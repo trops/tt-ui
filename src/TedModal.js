@@ -27,7 +27,12 @@ class TedModal extends React.Component {
       >
         <div className="tedModalContainer">
           <div className="tedModalImageContainer">
-            <img src={hit.image_url} width={'100%'} />
+            <img
+              src={hit.image_url}
+              width={'100%'}
+              height={'100%'}
+              alt={hit.name}
+            />
           </div>
           <div className="tedModalContent">
             <div style={{ float: 'right' }}>
@@ -35,7 +40,12 @@ class TedModal extends React.Component {
             </div>
             <h1 className="content">{hit.name}</h1>
             <p className="content">{hit.description}</p>
-            <p className="content"><span><strong>Speakers: </strong></span> {`${hit.speakers.join(', ')}`}</p>
+            <p className="content">
+              <span>
+                <strong>Speakers: </strong>
+              </span>{' '}
+              {`${hit.speakers.join(', ')}`}
+            </p>
           </div>
         </div>
       </Modal>
@@ -44,8 +54,8 @@ class TedModal extends React.Component {
 }
 
 TedModal.propTypes = {
-  showModal: false,
-  hit: {},
+  showModal() {},
+  hit() {},
   handleCloseModal() {},
 };
 
