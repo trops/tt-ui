@@ -27,7 +27,3 @@ In order to show the most popular content, I chose to rank the content hits base
 When using the instantSearch components, I had trouble understanding the RefinementList and how to get this list to appear in my page. I realized that the refinement is tied to the filters of the index, and therefore needed to add "tags" to the facets section. In the documentation of RefinementList, it would have been helpful to know what the list comprised of, and how to setup the attribute properly. (Unless I missed something!)
 
 All in all, the process was very smooth and integration with React was nice as well.
-
-
-
-
