@@ -1,13 +1,13 @@
 {
-  "main.css": "/tt-ui/static/css/main.872c4d2a.chunk.css",
-  "main.js": "/tt-ui/static/js/main.cf72e021.chunk.js",
-  "main.js.map": "/tt-ui/static/js/main.cf72e021.chunk.js.map",
-  "static/js/1.b83ee2a0.chunk.js": "/tt-ui/static/js/1.b83ee2a0.chunk.js",
-  "static/js/1.b83ee2a0.chunk.js.map": "/tt-ui/static/js/1.b83ee2a0.chunk.js.map",
+  "main.css": "/tt-ui/static/css/main.0305a9b0.chunk.css",
+  "main.js": "/tt-ui/static/js/main.1d9ba584.chunk.js",
+  "main.js.map": "/tt-ui/static/js/main.1d9ba584.chunk.js.map",
+  "static/js/1.5f084f85.chunk.js": "/tt-ui/static/js/1.5f084f85.chunk.js",
+  "static/js/1.5f084f85.chunk.js.map": "/tt-ui/static/js/1.5f084f85.chunk.js.map",
   "runtime~main.js": "/tt-ui/static/js/runtime~main.bddc851d.js",
   "runtime~main.js.map": "/tt-ui/static/js/runtime~main.bddc851d.js.map",
-  "static/css/main.872c4d2a.chunk.css.map": "/tt-ui/static/css/main.872c4d2a.chunk.css.map",
+  "static/css/main.0305a9b0.chunk.css.map": "/tt-ui/static/css/main.0305a9b0.chunk.css.map",
   "index.html": "/tt-ui/index.html",
-  "precache-manifest.466b3181fa7bafbf09c2369018c68757.js": "/tt-ui/precache-manifest.466b3181fa7bafbf09c2369018c68757.js",
+  "precache-manifest.97dda5d0cb8d24c415462a15c0fae926.js": "/tt-ui/precache-manifest.97dda5d0cb8d24c415462a15c0fae926.js",
   "service-worker.js": "/tt-ui/service-worker.js"
 }
