@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 import './Hit.css';
 
 class Hit extends React.Component {
-  handleClick = () => {};
+  handleClick = () => {
+    this.props.onClick(this.props.hit);
+  };
+
   render() {
     const { hit } = this.props;
     const speakers = hit.speakers.length > 0 ? hit.speakers.join(', ') : null;
@@ -37,6 +40,7 @@ class Hit extends React.Component {
 
 Hit.propTypes = {
   hit: PropTypes.object.isRequired,
+  onClick() {},
 };
 
 export default Hit;

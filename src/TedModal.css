@@ -1,0 +1,30 @@
+.tedModalContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.tedModalImageContainer {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    background-color: black;
+}
+
+.tedModalContent {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1.content {
+    font-size: 3rem;
+}
+
+p.content {
+    font-size: 1.5rem;
+}
+
+button {
+    float: right;
+}

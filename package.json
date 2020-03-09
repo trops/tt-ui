@@ -1,5 +1,4 @@
 {
-
   "name": "tedtalks-ui",
   "homepage": "http://trops.github.io/tt-ui",
   "version": "1.0.0",
@@ -18,6 +17,7 @@
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-instantsearch-dom": "6.3.0",
+    "react-modal": "^3.11.2",
     "react-scripts": "2.1.1"
   },
   "devDependencies": {

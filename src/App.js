@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import algoliasearch from 'algoliasearch/lite';
 import {
   InstantSearch,
-  Hits,
   SearchBox,
   Pagination,
   RefinementList,
   Stats,
 } from 'react-instantsearch-dom';
 import Hit from './Hit';
+import TedHits from './TedHits';
+import TedModal from './TedModal';
 import './App.css';
 
 const searchClient = algoliasearch(
@@ -17,6 +18,45 @@ const searchClient = algoliasearch(
 );
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      showModal: false,
+      hit: null,
+    };
+  }
+
+  handleOpenModal = () => {
+    this.setState({
+      showModal: true,
+    });
+  };
+
+  handleCloseModal = () => {
+    this.setState({
+      showModal: false,
+      hit: null,
+    });
+  };
+
+  handleClickHit = hit => {
+    this.setState({
+      hit,
+      showModal: true,
+    });
+  };
+
+  renderDetailModal = () => {
+    const { showModal, hit } = this.state;
+    return hit !== null ? (
+      <TedModal
+        showModal={showModal}
+        hit={hit}
+        handleCloseModal={this.handleCloseModal}
+      />
+    ) : null;
+  };
+
   render() {
     return (
       <div>
@@ -25,6 +65,7 @@ class App extends Component {
             <a href="/">TED talks</a>
           </h1>
         </header>
+        {this.renderDetailModal()}
         <div className="container">
           <InstantSearch searchClient={searchClient} indexName="dev_TEDTALKS">
             <div className="right-panel">
@@ -45,7 +86,7 @@ class App extends Component {
                     <Stats />
                   </div>
                   <div className="hitsbox">
-                    <Hits hitComponent={Hit} />
+                    <TedHits hitComponent={Hit} onClick={this.handleClickHit} />
                   </div>
                   <div className="pagination">
                     <Pagination />
