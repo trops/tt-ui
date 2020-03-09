@@ -30,6 +30,8 @@ class App extends Component {
             <div className="right-panel">
               <div className="search-panel">
                 <div className="search-panel__filters">
+                  <h3>Tags</h3>
+                  <br />
                   <RefinementList attribute="tags" />
                 </div>
                 <div className="search-panel__results">

@@ -1,15 +1,9 @@
-em {
-  background: cyan;
-  font-style: normal;
-}
-
 .header {
   display: flex;
   align-items: center;
   min-height: 50px;
   padding: 0.5rem 1rem;
   background-color: black;
-  /* background-image: linear-gradient(to right, #8e43e7, #00aeff); */
   color: #fff;
   margin-bottom: 1rem;
 }
@@ -44,7 +38,8 @@ em {
 }
 
 .search-panel__results {
-  flex: 3;
+  flex: 5;
+  padding: 10px;
 }
 
 .searchbox {
@@ -93,4 +88,9 @@ li.ais-Hits-item:hover {
 
 p.tiny {
   font-size: .75rem;
+}
+
+.search-panel__filters {
+  border-right: 1px solid #EEEEEE;
+  margin-right: 20px;
 }
