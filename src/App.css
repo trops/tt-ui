@@ -86,7 +86,7 @@ li.ais-Hits-item {
 }
 
 li.ais-Hits-item:hover {
-  border: 3px solid red;
+  border: 3px solid#CCCCCC;
   box-shadow: none;
   cursor: pointer;
 }

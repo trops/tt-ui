@@ -25,7 +25,6 @@ class App extends Component {
             <a href="/">TED talks</a>
           </h1>
         </header>
-
         <div className="container">
           <InstantSearch searchClient={searchClient} indexName="dev_TEDTALKS">
             <div className="right-panel">
@@ -46,7 +45,6 @@ class App extends Component {
                   <div className="hitsbox">
                     <Hits hitComponent={Hit} />
                   </div>
-
                   <div className="pagination">
                     <Pagination />
                   </div>
