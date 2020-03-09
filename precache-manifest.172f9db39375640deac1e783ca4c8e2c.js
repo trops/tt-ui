@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/tt-ui/static/js/runtime~main.bddc851d.js"
   },
   {
-    "revision": "1d9ba584ef0d69a75e12",
-    "url": "/tt-ui/static/js/main.1d9ba584.chunk.js"
+    "revision": "c42f98019762899e4610",
+    "url": "/tt-ui/static/js/main.c42f9801.chunk.js"
   },
   {
     "revision": "5f084f851fa35393641c",
     "url": "/tt-ui/static/js/1.5f084f85.chunk.js"
   },
   {
-    "revision": "1d9ba584ef0d69a75e12",
-    "url": "/tt-ui/static/css/main.0305a9b0.chunk.css"
+    "revision": "c42f98019762899e4610",
+    "url": "/tt-ui/static/css/main.094d2198.chunk.css"
   },
   {
-    "revision": "30db42b9583a334fe42c99df05bd2742",
+    "revision": "e9b270d23512b8cd72f7daafc8a90e0a",
     "url": "/tt-ui/index.html"
   }
 ];
